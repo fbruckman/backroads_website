@@ -1,3 +1,4 @@
+require 'middleman-thumbnailer'
 ###
 # Compass
 ###
@@ -36,9 +37,9 @@
 # activate :automatic_image_sizes
 
 # Reload the browser automatically whenever files change
-# configure :development do
-#   activate :livereload
-# end
+configure :development do
+  activate :livereload
+end
 
 # Methods defined in the helpers block are available in templates
 # helpers do
@@ -46,6 +47,16 @@
 #     "Helping"
 #   end
 # end
+
+set :url_root, 'http://backroads_photography' #CHANGE ME
+
+activate :search_engine_sitemap
+
+activate :thumbnailer,
+  :dimensions => {
+    :small => '250x'
+  },
+  :namespace_directory => %w(gallery)
 
 set :css_dir, 'stylesheets'
 
@@ -69,4 +80,12 @@ configure :build do
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
+end
+
+activate :deploy do |deploy|
+  deploy.build_before = true # default: false
+  deploy.method = :git
+  # Optional Settings
+  # deploy.remote = "custom-remote" # remote name or git url, default: origin
+  # deploy.branch = "custom-branch" # default: gh-pages
 end
