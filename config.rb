@@ -56,7 +56,7 @@ end
 #   end
 # end
 
-set :url_root, 'http://savvyshots.photography'
+set :url_root, 'http://savvysoftworks.github.io/backroads_website'
 
 activate :asset_host
 
@@ -89,14 +89,14 @@ configure :build do
   # Minify Javascript on build
   # activate :minify_javascript
 
-  set :asset_host, 'http://savvyshots.photography'
+  set :asset_host, 'http://savvysoftworks.github.io/backroads_website'
 
   ignore 'images/webify'
 
   # Enable cache buster
   activate :asset_hash do |opts|
     opts.exts << '.woff2'
-    opts.ignore << 'beast_of_avalon'
+    opts.ignore << 'cal_espresso'
   end
 
   # Use relative URLs
