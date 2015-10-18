@@ -4,10 +4,10 @@ $social-grid-size-container: $grid-columns/3;
 .sitemap--main{
   @include outer-container;
   a{
-    color: $special-text-color;
+    color: $color-secondary-2-3;
     text-decoration: none;
   &:active, &:visited{
-    color: $special-text-color;
+    color: $color-secondary-2-3;
   }
   &:hover{
     color: $nav-link-text-color;
