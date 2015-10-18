@@ -1,4 +1,6 @@
-$logo_font_size: 2.5em;
+@import "colors";
+
+$logo_font_size: 2em;
 $logo-background-color: white;
 $logo-link-text-color: #333;
 $logo-link-text-hover-color: #a6d4ce;
@@ -10,8 +12,6 @@ $special-text-color: #a6d4ce;
 @import "fonts";
 @import "nivo";
 @import "nav";
-@import "pricing";
-@import "about";
 @import "sitemap";
 @import "reviews";
 
@@ -70,6 +70,15 @@ header{
   }
 }
 
+.logo .tiny-of{
+  font-size: 0.5em;
+  line-height: 0.5;
+}
+
+.logo .end{
+  font-size: 0.9em;
+}
+
 .logo a{
   color: $logo-link-text-color;
   text-decoration: none;
@@ -100,7 +109,6 @@ header{
 
 body {
   background-color: rgb(247, 247, 247);
-  /*background: #d4d4d4 url("../images/background.png");*/
   font-family: sans-serif;
 }
 

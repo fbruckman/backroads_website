@@ -1,14 +1,20 @@
 .logo
   %a{:href => "index.html"}
-    %h1.headline Backroads
+    %h1.headline
+      .start Backroads
+      .tiny-of of&nbsp;&nbsp;&nbsp;
+      .end Life&nbsp;&nbsp;
     .tagline &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Photography
 - home = current_page.path != 'index.html'
 
 %ul.nav--ul
   %li.nav--link.square
-    %a{href:'contact.html'} Contact
+    %a.social-buttons{href:'https://www.facebook.com/backroads', target:'_blank'}
+      = image_tag('F_icon_backroads.svg', {class:'fbook'})
+  %li.nav--link.square
+    //%a{href:'contact.html'} Contact
   %li.nav--link
-    %a{href:'portfolio.html'} Portfolio
+    //%a{href:'portfolio.html'} Portfolio
   - if home
     %li.nav--link
       %a{href:'index.html'}
