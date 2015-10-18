@@ -1,5 +1,3 @@
-@charset "UTF-8";
-
 /// Forces the element to fill its parent container.
 ///
 /// @example scss - Usage
@@ -10,6 +8,8 @@
 /// @example css - CSS Output
 ///   .element {
 ///     width: 100%;
+///     -webkit-box-sizing: border-box;
+///     -moz-box-sizing: border-box;
 ///     box-sizing: border-box;
 ///   }
 
@@ -17,6 +17,6 @@
   width: 100%;
 
   @if $border-box-sizing == false {
-    box-sizing: border-box;
+    @include box-sizing(border-box);
   }
 }

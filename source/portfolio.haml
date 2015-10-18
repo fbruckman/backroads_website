@@ -1,0 +1,7 @@
+- content_for :javascripts do
+  = javascript_include_tag  "galleria.portfolio"
+
+.galleria
+  - @gallery.each do |img|
+    %a{href: image_url("gallery/gallery_one/#{img}")}
+      = thumbnail "gallery/gallery_one/#{img}", :small
