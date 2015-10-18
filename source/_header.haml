@@ -1,0 +1,17 @@
+.logo
+  %a{:href => "index.html"}
+    %h1.headline Backroads
+    .tagline &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Photography
+- home = current_page.path != 'index.html'
+
+%ul.nav--ul
+  %li.nav--link.square
+    %a{href:'contact.html'} Contact
+  %li.nav--link
+    %a{href:'portfolio.html'} Portfolio
+  - if home
+    %li.nav--link
+      %a{href:'index.html'}
+        =image_tag('house-309113.svg', {class:'home-button'})
+
+%nav.nav--main= partial "navigation"

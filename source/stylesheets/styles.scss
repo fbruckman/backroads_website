@@ -1,0 +1,118 @@
+$logo_font_size: 2.5em;
+$logo-background-color: white;
+$logo-link-text-color: #333;
+$logo-link-text-hover-color: #a6d4ce;
+$special-text-color: #a6d4ce;
+
+@import "normalize";
+@import "reset";
+@import "bourbon";
+@import "fonts";
+@import "nivo";
+@import "nav";
+@import "pricing";
+@import "about";
+@import "sitemap";
+@import "reviews";
+
+div, nav, section{
+  border-radius: 0.1em;
+}
+
+body{
+  max-width: none;
+}
+
+div.index{
+  @include outer-container;
+  max-width: none;
+}
+
+div.portfolio{
+  @include outer-container;
+  max-width: none;
+  margin-left: 0.5em;
+}
+
+a{
+  color: $nav-link-button-hover-color;
+  text-decoration: none;
+  &:active, &:visited{
+    color: $nav-link-button-hover-color;
+  }
+  &:hover{
+    color: $special-text-color;
+  }
+}
+
+header{
+  @include outer-container;
+  margin-bottom: 1em;
+  @include media($single-column) {
+    margin-bottom: initial;
+    padding-bottom: 0.1em;
+  }
+}
+
+.galleria{
+  height: 800px;
+}
+
+.logo{
+  @include span-columns(3);
+
+  min-width: 5.4em;
+  font-size: $logo_font_size;
+  line-height: 1;
+  @include media($single-column) {
+    margin: auto;
+    float: initial;
+  }
+}
+
+.logo a{
+  color: $logo-link-text-color;
+  text-decoration: none;
+
+  &:active, &:visited{
+    color: $logo-link-text-color;
+  }
+
+  &:hover{
+    color: $logo-link-text-color;
+  }
+}
+
+.headline{
+  font-family: CALEspresso_Bold;
+  font-size: 1em;
+  margin-bottom: 0;
+  line-height: 1;
+  text-align: center;
+  padding-top: 0.4em;
+}
+.tagline{
+  font-family: sans-serif;
+  font-size: 0.3em;
+  text-align: center;
+  @include omega;
+}
+
+body {
+  background-color: rgb(247, 247, 247);
+  /*background: #d4d4d4 url("../images/background.png");*/
+  font-family: sans-serif;
+}
+
+.contact{
+  text-align: center;
+  @include media($single-column) {
+    text-align: initial;
+  }
+}
+
+p.contactLink{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 1.2em;
+}
