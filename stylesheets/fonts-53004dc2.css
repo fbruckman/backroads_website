@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "CALEspresso_Bold";
+  src: url("cal_espresso.eot");
+  /* IE9*/
+  src: url("cal_espresso.eot?#iefix") format("embedded-opentype"), url("cal_espresso.woff") format("woff"), url("cal_espresso.ttf") format("truetype"), url("cal_espresso.svg#CALEspressoW00-Bold") format("svg");
+  /* iOS 4.1- */
+  font-weight: normal;
+  font-style: normal; }
