@@ -81,7 +81,6 @@ set :images_dir, 'images'
 
 # Build-specific configuration
 configure :build do
-  #@gallery = Dir.entries("./build/images/gallery/").select {|img| img.include?('.jpg')}
 
   # For example, change the Compass output style for deployment
   # activate :minify_css
