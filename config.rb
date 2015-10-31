@@ -56,7 +56,7 @@ end
 #   end
 # end
 
-set :url_root, 'http://savvysoftworks.github.io/backroads_website'
+set :url_root, 'http://backroadsoflife.com'
 
 activate :asset_host
 
@@ -88,7 +88,7 @@ configure :build do
   # Minify Javascript on build
   # activate :minify_javascript
 
-  set :asset_host, 'http://savvysoftworks.github.io/backroads_website'
+  set :asset_host, 'http://backroadsoflife.com'
 
   ignore 'images/webify'
 
