@@ -56,7 +56,7 @@ end
 #   end
 # end
 
-set :url_root, 'http://savvysoftworks.github.io/backroads_website'
+set :url_root, 'http://backroadsoflife.com'
 
 activate :asset_host
 
@@ -81,7 +81,6 @@ set :images_dir, 'images'
 
 # Build-specific configuration
 configure :build do
-  #@gallery = Dir.entries("./build/images/gallery/").select {|img| img.include?('.jpg')}
 
   # For example, change the Compass output style for deployment
   # activate :minify_css
@@ -89,7 +88,7 @@ configure :build do
   # Minify Javascript on build
   # activate :minify_javascript
 
-  set :asset_host, 'http://savvysoftworks.github.io/backroads_website'
+  set :asset_host, 'http://backroadsoflife.com'
 
   ignore 'images/webify'
 
