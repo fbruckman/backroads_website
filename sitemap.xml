@@ -1,19 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://savvysoftworks.github.io/backroads_website/contact.html</loc>
-    <lastmod>2015-10-18T13:16:03-04:00</lastmod>
+    <loc>http://backroadsoflife.com/about.html</loc>
+    <lastmod>2015-10-22T13:43:03-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://savvysoftworks.github.io/backroads_website/</loc>
+    <loc>http://backroadsoflife.com/contact.html</loc>
+    <lastmod>2015-10-22T13:43:03-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://backroadsoflife.com/</loc>
     <lastmod>2015-10-18T14:02:41-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://savvysoftworks.github.io/backroads_website/portfolio.html</loc>
+    <loc>http://backroadsoflife.com/portfolio.html</loc>
     <lastmod>2015-10-18T13:16:03-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
